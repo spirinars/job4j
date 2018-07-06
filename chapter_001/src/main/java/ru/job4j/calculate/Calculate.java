@@ -11,7 +11,7 @@ public class Calculate {
 	 * @param args - args.
 	 * Метод main позволяет вывести надпись "Hello World в консоль"
 	*/
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		System.out.println("Hello World");
 	}
 	/**
