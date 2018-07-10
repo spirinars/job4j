@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 /**
- *Class Converter 3.3. Идеальный вес. [#41584]
+ *Class Point 3.4. Расстояние между точками в системе координат [#188]
  *@author Spirinars mailto:spirinars@ya.ru
  *since 10.07.2018
  */
