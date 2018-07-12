@@ -1,4 +1,4 @@
-package ru.job4j.point;
+package ru.job4j.condition;
 
 /**
  *Class Point 3.4. Расстояние между точками в системе координат [#188]
@@ -14,15 +14,15 @@ public class Point {
         this.y = y;
     }
 
-    public double distanceTo(ru.job4j.point.Point that) {
+    public double distanceTo(Point that) {
         return Math.sqrt(
                 Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2)
         );
     }
 
     public static void main(String[] args) {
-        ru.job4j.point.Point a = new ru.job4j.point.Point(0, 1);
-        ru.job4j.point.Point b = new ru.job4j.point.Point(2, 5);
+        Point a = new Point(0, 1);
+        Point b = new Point(2, 5);
         // сделаем вызов метода
         System.out.println("x1 = " + a.x);
         System.out.println("y1 = " + a.y);

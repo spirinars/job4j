@@ -1,4 +1,4 @@
-package ru.job4j.fit;
+package ru.job4j.calculator;
 
 /**
  *Class Converter 3.3. Идеальный вес. [#41584]
