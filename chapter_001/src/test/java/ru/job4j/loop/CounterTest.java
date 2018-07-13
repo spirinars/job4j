@@ -16,5 +16,11 @@ import static org.junit.Assert.assertThat;
             int resul = count.add(0, 10);
             assertThat(resul, is(30));
         }
+        @Test
+        public void whenSumEvenNumbersFromTwentyToThirtyThen150() {
+        Counter count = new Counter();
+        int resul = count.add(20, 30);
+        assertThat(resul, is(150));
+        }
     }
 
