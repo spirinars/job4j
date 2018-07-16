@@ -26,4 +26,3 @@ target/
 
 .idea
 *.iml
-checkstyle.xml
