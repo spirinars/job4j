@@ -30,7 +30,7 @@ public class CheckTest {
     @Test
     public void whenDataNotMonoManyByFalseThenTrue() {
         Check check = new Check();
-        boolean[] input = new boolean[] {false, false, false, false, false ,false, true, false};
+        boolean[] input = new boolean[] {false, false, false, false, false, false, true, false};
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }

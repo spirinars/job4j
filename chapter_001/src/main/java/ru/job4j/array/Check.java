@@ -8,7 +8,8 @@ public class Check {
                 result = false;
             }
         }
-    return result;}
+    return result;
+    }
 }
 
 
