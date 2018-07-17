@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 /**
- *6.0. 6.1. Классический поиск перебором. [#33489]
+ *6.2. Перевернуть массив. [#4441]
  *@author Spirin Arseny mailto:spirinars@ya.ru
  *@version $Id$
  *since 16.07.2018
