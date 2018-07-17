@@ -39,4 +39,46 @@ public class MatrixCheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }
+    @Test
+    public void whenDataNotMonoByTrueVerTwoThenFalseTwo() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {false, true, true},
+                {false, true, true},
+                {true, false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void whenDataNotMonoByTrueVerThreeThenFalseTwo() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {false, true},
+                {false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    public void whenDataNotMonoByTrueVerFourThenFalseTwo() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {false, true},
+                {true, false}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void whenDataNotMonoByTrueVerTwoThenFalseFive() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {false, true, true, true},
+                {false, false, true, true},
+                {true, true, false, true},
+                {true, true, true, false}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
 }
