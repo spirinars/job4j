@@ -29,29 +29,7 @@ public class MatrixCheckTest {
         assertThat(result, is(false));
     }
     @Test
-    public void whenDataNotMonoByTrueVerTwoThenFalse() {
-        MatrixCheck check = new MatrixCheck();
-        boolean[][] input = new boolean[][] {
-                {true, true, false},
-                {false, true, true},
-                {true, false, true}
-        };
-        boolean result = check.mono(input);
-        assertThat(result, is(false));
-    }
-    @Test
-    public void whenDataNotMonoByTrueVerTwoThenFalseTwo() {
-        MatrixCheck check = new MatrixCheck();
-        boolean[][] input = new boolean[][]{
-                {false, true, true},
-                {false, true, true},
-                {true, false, true}
-        };
-        boolean result = check.mono(input);
-        assertThat(result, is(false));
-    }
-    @Test
-    public void whenDataNotMonoByTrueVerThreeThenFalseTwo() {
+    public void whenFourOnFourDataNotMonoByTrueVerThreeThenFalse() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][]{
                 {false, true},
@@ -60,34 +38,24 @@ public class MatrixCheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }
-    public void whenDataNotMonoByTrueVerFourThenFalseTwo() {
+    @Test
+    public void whenFirstFalseSecondTrueTahatTrue() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][]{
                 {false, true},
                 {true, false}
         };
         boolean result = check.mono(input);
-        assertThat(result, is(false));
+        assertThat(result, is(true));
     }
     @Test
-    public void whenDataNotMonoByTrueVerTwoThenFalseFive() {
-        MatrixCheck check = new MatrixCheck();
-        boolean[][] input = new boolean[][]{
-                {false, true, true, true},
-                {false, false, true, true},
-                {true, true, false, true},
-                {true, true, true, false}
-        };
-        boolean result = check.mono(input);
-        assertThat(result, is(false));
-    }
-    public void whenDataNotMonoByTrueVerFourThenFalseSix() {
+    public void whenFirstTrueSecondFalseTahatTrue() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][]{
                 {true, false},
                 {false, true}
         };
         boolean result = check.mono(input);
-        assertThat(result, is(false));
+        assertThat(result, is(true));
     }
 }
