@@ -39,7 +39,7 @@ public class MatrixCheckTest {
         assertThat(result, is(false));
     }
     @Test
-    public void whenFirstFalseSecondTrueTahatTrue() {
+    public void whenFirstFalseSecondTrueThatTrue() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][]{
                 {false, true},
@@ -49,7 +49,7 @@ public class MatrixCheckTest {
         assertThat(result, is(true));
     }
     @Test
-    public void whenFirstTrueSecondFalseTahatTrue() {
+    public void whenFirstTrueSecondFalseThatTrue() {
         MatrixCheck check = new MatrixCheck();
         boolean[][] input = new boolean[][]{
                 {true, false},
@@ -57,5 +57,49 @@ public class MatrixCheckTest {
         };
         boolean result = check.mono(input);
         assertThat(result, is(true));
+    }
+
+    @Test
+    public void whenFirstTrueSecondTrueFalseTahatTrue() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {true, true},
+                {false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void whenFirstTrueFalseSecondTrueTahatFalse() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {true, true},
+                {true, false}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+    @Test
+    public void when3On3FirstTrueFalseSecondTrueTahatFalse() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {true, true, false},
+                {true, true, false},
+                {true, false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+
+    @Test
+    public void when3On3FirstTrueFalseSecondTrueTahatFalseTwo() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][]{
+                {true, true, true},
+                {true, true, false},
+                {false, false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
     }
 }
