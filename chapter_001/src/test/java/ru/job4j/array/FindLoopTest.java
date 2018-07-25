@@ -11,7 +11,7 @@ public class FindLoopTest {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 10, 3};
         int value = 5;
-        int result = find.indexOf(input, value);
+        int result = find.index(input, value);
         int expect = 0;
         assertThat(result, is(expect));
     }
@@ -20,7 +20,7 @@ public class FindLoopTest {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 10, 3};
         int value = 11;
-        int result = find.indexOf(input, value);
+        int result = find.index(input, value);
         int expect = -1;
         assertThat(result, is(expect));
     }

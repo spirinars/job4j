@@ -1,5 +1,4 @@
 package ru.job4j.loop;
-
 /**
  *5.2. Создать программу вычисляющую факториал. [#193]
  *@author Spirinars mailto:spirinars@ya.ru

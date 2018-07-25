@@ -6,8 +6,6 @@ package ru.job4j.max;
  *@version $Id$
  *since 12.07.2018
  */
-
-
 public class Max {
 
     /**

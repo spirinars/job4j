@@ -90,7 +90,6 @@ public class MatrixCheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }
-
     @Test
     public void when3On3FirstTrueFalseSecondTrueTahatFalseTwo() {
         MatrixCheck check = new MatrixCheck();

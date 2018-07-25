@@ -20,7 +20,6 @@ public class CalculatorTest {
         double expected = 2D;
         assertThat(result, is(expected));
     }
-
     @Test
     public void whenOneSubtractOneThenZero() {
         Calculator calc = new Calculator();
@@ -29,7 +28,6 @@ public class CalculatorTest {
         double expected = 0D;
         assertThat(result, is(expected));
     }
-
     @Test
     public void whenDiv2on2Then1() {
         Calculator calc = new Calculator();
@@ -38,7 +36,6 @@ public class CalculatorTest {
         double expected = 1D;
         assertThat(result, is(expected));
     }
-
     @Test
     public void whenMultiple1on0Then0() {
         Calculator calc = new Calculator();

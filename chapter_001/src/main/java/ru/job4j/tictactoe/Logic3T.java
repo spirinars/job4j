@@ -6,7 +6,6 @@ public class Logic3T {
     public Logic3T(Figure3T[][] table) {
         this.table = table;
     }
-
     public boolean isWinnerX() {
         if (this.table[0][0].hasMarkX() && this.table[1][1].hasMarkX() && this.table[2][2].hasMarkX()) {
             return true;
@@ -23,7 +22,6 @@ public class Logic3T {
         }
         return false;
     }
-
     public boolean isWinnerO() {
         if (this.table[0][0].hasMarkO() && this.table[1][1].hasMarkO() && this.table[2][2].hasMarkO()) {
             return true;
@@ -40,8 +38,6 @@ public class Logic3T {
         }
         return false;
     }
-
-
     public boolean hasGap() {
         for (int i = 0; i <= 2; i++) {
             for (int j = 0; j <= 2; j++) {
